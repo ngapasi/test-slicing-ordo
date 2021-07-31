@@ -1,0 +1,453 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;
+
+300;400;500;600;700;800;900&display=swap);body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar .notif {
+  background-image: url(/images/bell.svg?fcbfadc3d75b30bb01923314e54fe1d5);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.navbar .notif::after {
+  content: "3";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 100%;
+  background: #d23a04;
+  color: #fff;
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.navbar .user {
+  background: #d8d8d8;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background: #fff;
+}
+
+.sidebar .divider {
+  background: #ece7e7;
+  width: 90%;
+  height: 1px;
+  margin: 1em auto;
+}
+
+.sidebar .nav-item {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.sidebar .nav-item .nav-link {
+  font-weight: 400;
+  color: rgba(20, 20, 20, 0.35);
+  font-size: 14px;
+}
+
+.sidebar .nav-item .nav-link.active,
+.sidebar .nav-item .nav-link:hover {
+  color: #575757;
+  font-weight: 600;
+  filter: drop-shadow(0px 0px 28px rgba(0, 0, 0, 0.09));
+  background: #fff;
+  border-radius: 8px;
+}
+
+.sidebar .nav-item .nav-link.active .icon,
+.sidebar .nav-item .nav-link:hover .icon {
+  background: #fa4a0c;
+}
+
+.sidebar .nav-item .nav-link.active .icon.pelanggan,
+.sidebar .nav-item .nav-link:hover .icon.pelanggan {
+  background-image: url(/images/pelanggan_white.svg?278703f248b7db6a514e89175ce7a4d6);
+}
+
+.sidebar .nav-item .nav-link.active .icon.vendor,
+.sidebar .nav-item .nav-link:hover .icon.vendor {
+  background-image: url(/images/UsersOutline.svg?129597c7625c88bc44ad0a4b1a8205cc);
+}
+
+.sidebar .nav-item .nav-link.active .icon.service,
+.sidebar .nav-item .nav-link:hover .icon.service {
+  background-image: url(/images/settings_white.svg?cbdb18fa275d5d831bbdf051db6897eb);
+}
+
+.sidebar .nav-item .nav-link.active .icon.financial,
+.sidebar .nav-item .nav-link:hover .icon.financial {
+  background-image: url(/images/financial_white.svg?cae7a1263811cabe116458e2b537f531);
+}
+
+.sidebar .nav-item .nav-link.active .icon.bukti,
+.sidebar .nav-item .nav-link:hover .icon.bukti {
+  background-image: url(/images/bukti_transfer_white.svg?b9d35fbc2c965f28873a8e97c8aad9d5);
+}
+
+.sidebar .nav-item .nav-link.active .icon.profile_setting,
+.sidebar .nav-item .nav-link:hover .icon.profile_setting {
+  background-image: url(/images/user_setting_white.svg?0fd90a7a1b598b6c7e04c971ea59a82b);
+}
+
+.sidebar .nav-item .nav-link.active .icon.logout,
+.sidebar .nav-item .nav-link:hover .icon.logout {
+  background-image: url(/images/logout_white.svg?75e406c6ccd7aa1c8abb269c8b429d21);
+}
+
+.sidebar .nav-item .nav-link .icon {
+  margin-right: 8px;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background: #fff;
+  background-repeat: no-repeat !important;
+  display: inline-block;
+  background-position: center !important;
+}
+
+.sidebar .nav-item .nav-link .icon.pelanggan {
+  background-image: url(/images/pelanggan.svg?fa43398de06bd6d64761617370e1272a);
+}
+
+.sidebar .nav-item .nav-link .icon.vendor {
+  background-image: url(/images/UsersOutline.svg?129597c7625c88bc44ad0a4b1a8205cc);
+}
+
+.sidebar .nav-item .nav-link .icon.service {
+  background-image: url(/images/settings.svg?32c5dcba7088e28a8728a2212df4584c);
+}
+
+.sidebar .nav-item .nav-link .icon.financial {
+  background-image: url(/images/financial.svg?97d9d1c842172a3ad7932af5832d1cb5);
+}
+
+.sidebar .nav-item .nav-link .icon.bukti {
+  background-image: url(/images/bukti_transfer.svg?40c24fc2650f57a2f11729f0507f866d);
+}
+
+.sidebar .nav-item .nav-link .icon.profile_setting {
+  background-image: url(/images/user_setting.svg?e1f36e665b302fbf487f56804f22b4dd);
+}
+
+.sidebar .nav-item .nav-link .icon.logout {
+  background-image: url(/images/logout.svg?326d6cdbfe41ff5b36612e0a25a5cddd);
+}
+
+.welcome {
+  margin-bottom: 0;
+  display: inline-block;
+  width: 80%;
+  vertical-align: middle;
+  color: #141414;
+  padding-left: 15px;
+}
+
+.welcome span {
+  font-weight: 700;
+}
+
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb .breadcrumb-item {
+  font-size: 20px;
+}
+
+.breadcrumb .breadcrumb-item.active {
+  font-weight: 500;
+  color: #141414;
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: rgba(20, 20, 20, 0.44);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 1em;
+}
+
+.sidebar-heading {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.navbar-mobile {
+  background: #fff;
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.07);
+  z-index: 2;
+}
+
+.navbar-mobile .position-relative .navbar-toggler {
+  right: 0;
+  margin-right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar-brand {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.menu-right .card {
+  border: none;
+  background: #f6f6f6;
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+}
+
+.menu-right .card .title-card {
+  font-size: 22px;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.menu-right .card .nav-tabs {
+  border-bottom: none;
+}
+
+.menu-right .card .nav-tabs .nav-item {
+  text-align: center;
+  width: 18%;
+}
+
+.menu-right .card .nav-tabs .nav-item .nav-link {
+  border-top-left-radius: 29px;
+  border-top-right-radius: 29px;
+  color: #6c6c6c;
+  font-weight: 500;
+  padding: 0.8rem 1rem;
+  font-size: 14px;
+}
+
+.menu-right .card .nav-tabs .nav-item .nav-link.active {
+  border: 1px solid #e3e3e3;
+  color: #141414;
+}
+
+.menu-right .card .tab-content {
+  background: #fff;
+  border-radius: 12px;
+  border: none;
+  border-top-right-radius: 0;
+}
+
+.menu-right .card .tab-content .table-responsive {
+  padding: 1em;
+  overflow-x: unset;
+}
+
+.menu-right .card .tab-content .table-responsive .table {
+  margin-bottom: 0;
+}
+
+.menu-right .card .tab-content .table-responsive .table th {
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.menu-right .card .tab-content .table-responsive .table td {
+  color: #535151;
+  font-weight: 500;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.menu-right .card .tab-content .table-responsive .table .nama_toko {
+  border-radius: 10px;
+  margin-right: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown-toggle::after {
+  display: none;
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .btn_aksi {
+  width: 80%;
+  border: none;
+  background: linear-gradient(98.35deg, #fa4a0c -13.77%, #d23a04 97.53%);
+  box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.12), inset 0 0 0 #ffffff;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  position: relative;
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .btn_aksi i {
+  margin-right: 12px;
+  right: 0;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .btn_aksi i::before {
+  font-weight: bold !important;
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .btn_aksi .arrow_down {
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  position: relative;
+  background-image: url(/images/arrow_down.svg?e28a120ef53183477447b37527cc0843);
+  position: absolute;
+  right: 0;
+  margin-right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .dropdown-menu {
+  border-radius: 10px;
+  background: linear-gradient(134.47deg, #ffffff -26.79%, #ffffff 230.75%);
+  box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.16), inset 0px 2px 0px #ffffff;
+  border: none;
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .dropdown-menu.show {
+  padding: 0;
+  min-width: 81%;
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .dropdown-menu.show::before {
+  display: inline-block;
+  content: "";
+  color: #fff;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  margin-right: 12px;
+  right: 0;
+  top: -5px;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .dropdown-menu .dropdown-item {
+  color: #b4aaaa;
+  font-size: 14px;
+  padding: 0.8rem;
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: transparent;
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .dropdown-menu .icon {
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 5px;
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .dropdown-menu .icon.\--profil_toko {
+  background-image: url(/images/user_fill.svg?daf73ebffe27e71978ee0c600d1def49);
+}
+
+.menu-right .card .tab-content .table-responsive .table .dropdown .dropdown-menu .icon.\--saldo {
+  background-image: url(/images/account_balance_wallet.svg?cf913cff960f09ae8ea54d86aedacc5d);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+@supports (position: sticky) {
+  .sidebar-sticky {
+    position: sticky;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-80 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+
+  .col-lg-20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-right .card .nav-tabs .nav-item {
+    width: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .breadcrumb .breadcrumb-item {
+    font-size: 15px;
+  }
+
+  .table-responsive {
+    overflow-x: auto !important;
+  }
+
+  .menu-right .card .tab-content .table-responsive .table .dropdown .btn_aksi {
+    width: 100%;
+  }
+
+  .menu-right .card .tab-content .table-responsive .table .dropdown .btn_aksi .arrow_down,
+  .menu-right .card .tab-content .table-responsive .table .nama_toko {
+    display: none;
+  }
+
+  .menu-right .card .tab-content .table-responsive .table .dropdown .dropdown-menu.show {
+    width: auto;
+  }
+}
+
